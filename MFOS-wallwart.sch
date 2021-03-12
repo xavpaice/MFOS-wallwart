@@ -579,10 +579,10 @@ Connection ~ 6550 1450
 Wire Wire Line
 	7300 1450 7400 1450
 $Comp
-L power:+5V #PWR0101
+L power:+5V #PWR06
 U 1 1 6024F1E1
 P 8000 1150
-F 0 "#PWR0101" H 8000 1000 50  0001 C CNN
+F 0 "#PWR06" H 8000 1000 50  0001 C CNN
 F 1 "+5V" V 8015 1278 50  0000 L CNN
 F 2 "" H 8000 1150 50  0001 C CNN
 F 3 "" H 8000 1150 50  0001 C CNN
@@ -643,7 +643,7 @@ L Connector_Generic:Conn_02x08_Odd_Even J2
 U 1 1 5F2B8B33
 P 8500 3500
 F 0 "J2" H 8550 3925 50  0000 C CNN
-F 1 "Connector_Generic:Conn_02x08_Odd_Even" H 8550 4016 50  0000 C CNN
+F 1 "Connector_Generic:Conn_02x08_Odd_Even" H 8600 4100 50  0001 C CNN
 F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 8500 3500 50  0001 C CNN
 F 3 "~" H 8500 3500 50  0001 C CNN
 	1    8500 3500
@@ -676,42 +676,6 @@ Wire Wire Line
 Wire Wire Line
 	1350 5350 1350 5000
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J3
-U 1 1 6030D1ED
-P 9250 3600
-F 0 "J3" H 9300 4017 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 9300 3926 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 9250 3600 50  0001 C CNN
-F 3 "~" H 9250 3600 50  0001 C CNN
-	1    9250 3600
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	8800 3800 9050 3800
-Wire Wire Line
-	9050 3800 9550 3800
-Connection ~ 9050 3800
-Wire Wire Line
-	9550 3700 9050 3700
-Wire Wire Line
-	9550 3600 9050 3600
-Wire Wire Line
-	9550 3500 9050 3500
-Wire Wire Line
-	9050 3600 8800 3600
-Connection ~ 9050 3600
-Wire Wire Line
-	9050 3700 9050 3600
-Connection ~ 9050 3700
-Wire Wire Line
-	9050 3500 9050 3600
-Connection ~ 9050 3500
-Wire Wire Line
-	9550 3400 9050 3400
-Wire Wire Line
-	9050 3400 8800 3400
-Connection ~ 9050 3400
-$Comp
 L Device:R R3
 U 1 1 6033B50D
 P 8100 1750
@@ -734,10 +698,10 @@ F 3 "~" H 8450 1750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0102
+L power:GND #PWR07
 U 1 1 6033C97B
 P 8800 1850
-F 0 "#PWR0102" H 8800 1600 50  0001 C CNN
+F 0 "#PWR07" H 8800 1600 50  0001 C CNN
 F 1 "GND" H 8805 1677 50  0000 C CNN
 F 2 "" H 8800 1850 50  0001 C CNN
 F 3 "" H 8800 1850 50  0001 C CNN
@@ -755,6 +719,469 @@ Wire Wire Line
 Connection ~ 7800 1750
 Wire Wire Line
 	7800 1750 7800 3300
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J5
+U 1 1 604659D3
+P 9050 3500
+F 0 "J5" H 9100 3925 50  0000 C CNN
+F 1 "Connector_Generic:Conn_02x08_Odd_Even" H 8850 4200 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 9050 3500 50  0001 C CNN
+F 3 "~" H 9050 3500 50  0001 C CNN
+	1    9050 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J8
+U 1 1 60466A44
+P 9600 3500
+F 0 "J8" H 9650 3925 50  0000 C CNN
+F 1 "Connector_Generic:Conn_02x08_Odd_Even" H 9450 2900 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 9600 3500 50  0001 C CNN
+F 3 "~" H 9600 3500 50  0001 C CNN
+	1    9600 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J10
+U 1 1 6046781E
+P 10150 3500
+F 0 "J10" H 10200 3925 50  0000 C CNN
+F 1 "Connector_Generic:Conn_02x08_Odd_Even" H 10100 4000 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 10150 3500 50  0001 C CNN
+F 3 "~" H 10150 3500 50  0001 C CNN
+	1    10150 3500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8800 3300 8850 3300
+Connection ~ 8800 3300
+Wire Wire Line
+	8850 3300 9350 3300
+Connection ~ 8850 3300
+Wire Wire Line
+	9350 3300 9400 3300
+Connection ~ 9350 3300
+Wire Wire Line
+	9900 3300 9400 3300
+Connection ~ 9400 3300
+Wire Wire Line
+	8800 3400 8850 3400
 Connection ~ 8800 3400
+Wire Wire Line
+	8850 3400 9350 3400
+Connection ~ 8850 3400
+Wire Wire Line
+	9350 3400 9400 3400
+Connection ~ 9350 3400
+Wire Wire Line
+	9400 3400 9900 3400
+Connection ~ 9400 3400
+Wire Wire Line
+	8850 3500 9350 3500
+Wire Wire Line
+	8850 3600 9350 3600
+Wire Wire Line
+	8850 3700 9350 3700
+Wire Wire Line
+	8850 3800 9350 3800
+Wire Wire Line
+	8800 3800 8850 3800
 Connection ~ 8800 3800
+Connection ~ 8850 3800
+Wire Wire Line
+	8800 3700 8850 3700
+Connection ~ 8800 3700
+Connection ~ 8850 3700
+Wire Wire Line
+	8800 3600 8850 3600
+Connection ~ 8850 3600
+Wire Wire Line
+	8800 3500 8850 3500
+Connection ~ 8800 3500
+Connection ~ 8850 3500
+Wire Wire Line
+	9400 3500 9900 3500
+Wire Wire Line
+	9400 3600 9900 3600
+Wire Wire Line
+	9400 3700 9900 3700
+Wire Wire Line
+	9400 3800 9900 3800
+Wire Wire Line
+	9950 3300 10450 3300
+Wire Wire Line
+	9950 3400 10450 3400
+Wire Wire Line
+	9950 3500 10450 3500
+Wire Wire Line
+	9950 3600 10450 3600
+Wire Wire Line
+	9950 3700 10450 3700
+Wire Wire Line
+	9950 3800 10450 3800
+Wire Wire Line
+	9350 3500 9400 3500
+Connection ~ 9350 3500
+Connection ~ 9400 3500
+Wire Wire Line
+	9350 3600 9400 3600
+Connection ~ 9350 3600
+Connection ~ 9400 3600
+Wire Wire Line
+	9350 3700 9400 3700
+Connection ~ 9350 3700
+Connection ~ 9400 3700
+Wire Wire Line
+	9350 3800 9400 3800
+Connection ~ 9350 3800
+Connection ~ 9400 3800
+Wire Wire Line
+	9900 3300 9950 3300
+Connection ~ 9900 3300
+Connection ~ 9950 3300
+Wire Wire Line
+	9900 3400 9950 3400
+Connection ~ 9900 3400
+Connection ~ 9950 3400
+Wire Wire Line
+	9900 3500 9950 3500
+Connection ~ 9900 3500
+Connection ~ 9950 3500
+Wire Wire Line
+	9900 3600 9950 3600
+Connection ~ 9900 3600
+Connection ~ 9950 3600
+Wire Wire Line
+	9900 3700 9950 3700
+Connection ~ 9900 3700
+Connection ~ 9950 3700
+Wire Wire Line
+	9900 3800 9950 3800
+Connection ~ 9900 3800
+Connection ~ 9950 3800
+Wire Wire Line
+	8300 3500 8800 3500
+Connection ~ 8300 3500
+Wire Wire Line
+	8350 3700 8800 3700
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J4
+U 1 1 605B1459
+P 8500 5700
+F 0 "J4" H 8550 6050 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 8850 6150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 8500 5700 50  0001 C CNN
+F 3 "~" H 8500 5700 50  0001 C CNN
+	1    8500 5700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8800 5800 8300 5800
+Wire Wire Line
+	8300 5500 8800 5500
+Wire Wire Line
+	8300 5600 8800 5600
+Wire Wire Line
+	8300 5700 8800 5700
+Wire Wire Line
+	8300 5900 8800 5900
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J3
+U 1 1 605B9114
+P 8500 4800
+F 0 "J3" H 8550 5225 50  0000 C CNN
+F 1 "Connector_Generic:Conn_02x08_Odd_Even" H 8450 5300 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 8500 4800 50  0001 C CNN
+F 3 "~" H 8500 4800 50  0001 C CNN
+	1    8500 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J6
+U 1 1 605BA10C
+P 9050 4800
+F 0 "J6" H 9100 5225 50  0000 C CNN
+F 1 "Connector_Generic:Conn_02x08_Odd_Even" H 9000 5300 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 9050 4800 50  0001 C CNN
+F 3 "~" H 9050 4800 50  0001 C CNN
+	1    9050 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J9
+U 1 1 605BA8B7
+P 9600 4800
+F 0 "J9" H 9650 5225 50  0000 C CNN
+F 1 "Connector_Generic:Conn_02x08_Odd_Even" H 9550 5300 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 9600 4800 50  0001 C CNN
+F 3 "~" H 9600 4800 50  0001 C CNN
+	1    9600 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J11
+U 1 1 605BB1F8
+P 10150 4800
+F 0 "J11" H 10200 5225 50  0000 C CNN
+F 1 "Connector_Generic:Conn_02x08_Odd_Even" H 10100 5300 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x08_P2.54mm_Vertical" H 10150 4800 50  0001 C CNN
+F 3 "~" H 10150 4800 50  0001 C CNN
+	1    10150 4800
+	1    0    0    1   
+$EndComp
+Connection ~ 7800 4150
+$Comp
+L power:+5V #PWR010
+U 1 1 605D8AC9
+P 10600 4600
+F 0 "#PWR010" H 10600 4450 50  0001 C CNN
+F 1 "+5V" V 10600 4700 50  0000 L CNN
+F 2 "" H 10600 4600 50  0001 C CNN
+F 3 "" H 10600 4600 50  0001 C CNN
+	1    10600 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR011
+U 1 1 605D9492
+P 10600 4700
+F 0 "#PWR011" H 10600 4550 50  0001 C CNN
+F 1 "+12V" V 10600 4900 50  0000 C CNN
+F 2 "" H 10600 4700 50  0001 C CNN
+F 3 "" H 10600 4700 50  0001 C CNN
+	1    10600 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 605D9EFA
+P 10600 4900
+F 0 "#PWR012" H 10600 4650 50  0001 C CNN
+F 1 "GND" V 10600 4700 50  0000 C CNN
+F 2 "" H 10600 4900 50  0001 C CNN
+F 3 "" H 10600 4900 50  0001 C CNN
+	1    10600 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10450 4600 10600 4600
+Wire Wire Line
+	10450 4700 10600 4700
+Wire Wire Line
+	10450 4900 10600 4900
+Wire Wire Line
+	10450 4900 10450 4800
+Connection ~ 10450 4900
+Wire Wire Line
+	10450 5000 10450 4900
+Wire Wire Line
+	10450 5000 9950 5000
+Connection ~ 10450 5000
+Wire Wire Line
+	9950 4900 10450 4900
+Wire Wire Line
+	9950 4800 10450 4800
+Connection ~ 10450 4800
+Connection ~ 10450 4700
+Wire Wire Line
+	10450 4600 9950 4600
+Connection ~ 10450 4600
+Wire Wire Line
+	9950 4600 9900 4600
+Connection ~ 9950 4600
+Wire Wire Line
+	9900 4700 9950 4700
+Connection ~ 9950 4700
+Wire Wire Line
+	9950 4700 10450 4700
+Wire Wire Line
+	9950 4800 9900 4800
+Connection ~ 9950 4800
+Wire Wire Line
+	9900 4900 9950 4900
+Connection ~ 9950 4900
+Wire Wire Line
+	9900 5000 9950 5000
+Connection ~ 9950 5000
+Wire Wire Line
+	9900 5100 9950 5100
+Connection ~ 9900 5100
+Wire Wire Line
+	9400 5000 9900 5000
+Connection ~ 9900 5000
+Connection ~ 9900 4900
+Wire Wire Line
+	9400 4800 9900 4800
+Connection ~ 9900 4800
+Wire Wire Line
+	9400 4700 9900 4700
+Connection ~ 9900 4700
+Wire Wire Line
+	9400 4600 9900 4600
+Connection ~ 9900 4600
+Wire Wire Line
+	8850 4600 9350 4600
+Wire Wire Line
+	8850 4700 9350 4700
+Wire Wire Line
+	8850 4800 9350 4800
+Wire Wire Line
+	8850 4900 9350 4900
+Wire Wire Line
+	8850 5000 9350 5000
+Wire Wire Line
+	8850 5100 9350 5100
+Wire Wire Line
+	8300 5100 8800 5100
+Wire Wire Line
+	8300 5000 8800 5000
+Wire Wire Line
+	8300 4900 8800 4900
+Wire Wire Line
+	8300 4800 8800 4800
+Wire Wire Line
+	8300 4700 8800 4700
+Wire Wire Line
+	8300 4600 8800 4600
+Wire Wire Line
+	8800 4600 8850 4600
+Connection ~ 8800 4600
+Connection ~ 8850 4600
+Wire Wire Line
+	8800 4700 8850 4700
+Connection ~ 8800 4700
+Connection ~ 8850 4700
+Wire Wire Line
+	8800 4800 8850 4800
+Connection ~ 8800 4800
+Connection ~ 8850 4800
+Wire Wire Line
+	8800 4900 8850 4900
+Connection ~ 8800 4900
+Connection ~ 8850 4900
+Wire Wire Line
+	8800 5000 8850 5000
+Connection ~ 8800 5000
+Connection ~ 8850 5000
+Wire Wire Line
+	8800 5100 8850 5100
+Connection ~ 8800 5100
+Connection ~ 8850 5100
+Wire Wire Line
+	9350 4600 9400 4600
+Connection ~ 9350 4600
+Connection ~ 9400 4600
+Wire Wire Line
+	9350 4700 9400 4700
+Connection ~ 9350 4700
+Connection ~ 9400 4700
+Wire Wire Line
+	9350 4800 9400 4800
+Connection ~ 9350 4800
+Connection ~ 9400 4800
+Wire Wire Line
+	9350 4900 9400 4900
+Connection ~ 9350 4900
+Connection ~ 9400 4900
+Wire Wire Line
+	9400 4900 9900 4900
+Wire Wire Line
+	9350 5000 9400 5000
+Connection ~ 9350 5000
+Connection ~ 9400 5000
+Wire Wire Line
+	9350 5100 9400 5100
+Connection ~ 9350 5100
+Connection ~ 9400 5100
+Wire Wire Line
+	9400 5100 9900 5100
+Wire Wire Line
+	9950 5100 10450 5100
+Connection ~ 9950 5100
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J7
+U 1 1 60807621
+P 9050 5700
+F 0 "J7" H 9100 6050 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 9050 5000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 9050 5700 50  0001 C CNN
+F 3 "~" H 9050 5700 50  0001 C CNN
+	1    9050 5700
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR08
+U 1 1 6080D597
+P 9450 5500
+F 0 "#PWR08" H 9450 5350 50  0001 C CNN
+F 1 "+12V" V 9450 5700 50  0000 C CNN
+F 2 "" H 9450 5500 50  0001 C CNN
+F 3 "" H 9450 5500 50  0001 C CNN
+	1    9450 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 6080D59D
+P 9450 5700
+F 0 "#PWR09" H 9450 5450 50  0001 C CNN
+F 1 "GND" V 9450 5500 50  0000 C CNN
+F 2 "" H 9450 5700 50  0001 C CNN
+F 3 "" H 9450 5700 50  0001 C CNN
+	1    9450 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 5900 7800 5900
+Connection ~ 8300 5900
+Wire Wire Line
+	8850 5900 9350 5900
+Wire Wire Line
+	8850 5700 9350 5700
+Wire Wire Line
+	9350 5700 9450 5700
+Connection ~ 9350 5700
+Wire Wire Line
+	8850 5800 9350 5800
+Wire Wire Line
+	8850 5600 9350 5600
+Wire Wire Line
+	9350 5700 9350 5600
+Connection ~ 9350 5600
+Wire Wire Line
+	9350 5800 9350 5700
+Connection ~ 9350 5800
+Wire Wire Line
+	9350 5500 9450 5500
+Connection ~ 9350 5500
+Wire Wire Line
+	8800 5500 8850 5500
+Connection ~ 8800 5500
+Connection ~ 8850 5500
+Wire Wire Line
+	8850 5500 9350 5500
+Wire Wire Line
+	8800 5600 8850 5600
+Connection ~ 8800 5600
+Connection ~ 8850 5600
+Wire Wire Line
+	8800 5700 8850 5700
+Connection ~ 8800 5700
+Connection ~ 8850 5700
+Wire Wire Line
+	8800 5800 8850 5800
+Connection ~ 8800 5800
+Connection ~ 8850 5800
+Wire Wire Line
+	8800 5900 8850 5900
+Connection ~ 8800 5900
+Connection ~ 8850 5900
+Connection ~ 7800 5100
+Connection ~ 8300 5100
+Wire Wire Line
+	7800 5900 7800 5100
+Wire Wire Line
+	7800 5100 7800 4150
+Wire Wire Line
+	8300 5100 7800 5100
 $EndSCHEMATC
