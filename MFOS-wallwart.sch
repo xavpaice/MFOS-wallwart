@@ -156,39 +156,6 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c9/16/8
 	1    5550 4150
 	1    0    0    1   
 $EndComp
-$Comp
-L Device:C C7
-U 1 1 5F265251
-P 4600 3000
-F 0 "C7" H 4715 3046 50  0000 L CNN
-F 1 "1uF" H 4715 2955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 4638 2850 50  0001 C CNN
-F 3 "~" H 4600 3000 50  0001 C CNN
-	1    4600 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C8
-U 1 1 5F26694C
-P 4650 4500
-F 0 "C8" H 4765 4546 50  0000 L CNN
-F 1 "1uF" H 4765 4455 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 4688 4350 50  0001 C CNN
-F 3 "~" H 4650 4500 50  0001 C CNN
-	1    4650 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5F266C0B
-P 6050 3000
-F 0 "C9" H 6165 3046 50  0000 L CNN
-F 1 "1uF" H 6165 2955 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 6088 2850 50  0001 C CNN
-F 3 "~" H 6050 3000 50  0001 C CNN
-	1    6050 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6050 3150 6050 3400
 Wire Wire Line
@@ -277,8 +244,6 @@ Connection ~ 5500 3400
 Wire Wire Line
 	5500 3400 4600 3400
 Wire Wire Line
-	4650 4350 4650 4150
-Wire Wire Line
 	4650 4150 5100 4150
 Wire Wire Line
 	4650 4150 3900 4150
@@ -305,8 +270,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 4450 5550 5000
 Connection ~ 5550 5000
-Wire Wire Line
-	4650 4650 4650 5000
 Connection ~ 4650 5000
 Wire Wire Line
 	4650 5000 5550 5000
@@ -345,17 +308,6 @@ Wire Wire Line
 	6050 4350 6050 4150
 Wire Wire Line
 	6600 4150 6600 4350
-$Comp
-L Device:C C10
-U 1 1 5F266FE5
-P 6050 4500
-F 0 "C10" H 6165 4546 50  0000 L CNN
-F 1 "1uF" H 6165 4455 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 6088 4350 50  0001 C CNN
-F 3 "~" H 6050 4500 50  0001 C CNN
-	1    6050 4500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Diode:1N4004 D6
 U 1 1 5F258283
@@ -533,28 +485,6 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 7150 1850 50  0001 C CNN
 	1    7150 1850
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:C C11
-U 1 1 60205FC3
-P 6800 2200
-F 0 "C11" V 6548 2200 50  0000 C CNN
-F 1 "1uF" V 6639 2200 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 6838 2050 50  0001 C CNN
-F 3 "~" H 6800 2200 50  0001 C CNN
-	1    6800 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 60217119
-P 7200 2200
-F 0 "C12" V 6948 2200 50  0000 C CNN
-F 1 "1uF" V 7039 2200 50  0000 C CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 7238 2050 50  0001 C CNN
-F 3 "~" H 7200 2200 50  0001 C CNN
-	1    7200 2200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6550 1150 6550 1450
 $Comp
@@ -717,8 +647,6 @@ Wire Wire Line
 Wire Wire Line
 	7950 1750 7800 1750
 Connection ~ 7800 1750
-Wire Wire Line
-	7800 1750 7800 3300
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J5
 U 1 1 604659D3
@@ -1184,4 +1112,76 @@ Wire Wire Line
 	7800 5100 7800 4150
 Wire Wire Line
 	8300 5100 7800 5100
+$Comp
+L Device:CP C7
+U 1 1 60563132
+P 4600 3000
+F 0 "C7" H 4718 3046 50  0000 L CNN
+F 1 "1uF" H 4718 2955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4638 2850 50  0001 C CNN
+F 3 "~" H 4600 3000 50  0001 C CNN
+	1    4600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C8
+U 1 1 6057A7D5
+P 4650 4500
+F 0 "C8" H 4532 4454 50  0000 R CNN
+F 1 "1uF" H 4532 4545 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4688 4350 50  0001 C CNN
+F 3 "~" H 4650 4500 50  0001 C CNN
+	1    4650 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4650 4650 4650 5000
+Wire Wire Line
+	4650 4150 4650 4350
+$Comp
+L Device:CP C9
+U 1 1 6059338F
+P 6050 3000
+F 0 "C9" H 6168 3046 50  0000 L CNN
+F 1 "1uF" H 6168 2955 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6088 2850 50  0001 C CNN
+F 3 "~" H 6050 3000 50  0001 C CNN
+	1    6050 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C10
+U 1 1 605B1749
+P 6050 4500
+F 0 "C10" H 5932 4454 50  0000 R CNN
+F 1 "1uF" H 5932 4545 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6088 4350 50  0001 C CNN
+F 3 "~" H 6050 4500 50  0001 C CNN
+	1    6050 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C11
+U 1 1 605C379C
+P 6800 2200
+F 0 "C11" V 7055 2200 50  0000 C CNN
+F 1 "1uF" V 6964 2200 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6838 2050 50  0001 C CNN
+F 3 "~" H 6800 2200 50  0001 C CNN
+	1    6800 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C12
+U 1 1 605C543E
+P 7200 2200
+F 0 "C12" V 6945 2200 50  0000 C CNN
+F 1 "1uF" V 7036 2200 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 7238 2050 50  0001 C CNN
+F 3 "~" H 7200 2200 50  0001 C CNN
+	1    7200 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 1750 7800 3300
 $EndSCHEMATC

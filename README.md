@@ -4,7 +4,7 @@ Slightly updated MFOS wallwart power supply for Eurorack, adding a +5V rail.
 
 V0.1 dev version
 
-This schematic and PCB is written using Kicad, v5.1.5.
+This schematic and PCB is written using Kicad, v6.0.2
 
 For the original circuit, see http://musicfromouterspace.com/analogsynth_new/WALLWARTSUPPLY/WALLWARTSUPPLY.php.
 
